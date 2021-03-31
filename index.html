@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper-inputs">
+            <div class="warpper-in-2">
+                <input type="text" class="name main-input" placeholder="Enter name">
+                <input type="number" min="10" max="150" class="age main-input" placeholder="Enter age">
+                <input type="number" min="0" max="100" class="score main-input" placeholder="Enter score">
+                <button class="add"> + Add</button>
+            </div>
+            <div class="sort-by">
+                <span class="sort">Sort by</span>
+                <select id="sorter">
+                    <option value="1" class="option mainoption">name</option>
+                    <option value="2" class="option">age</option>
+                    <option value="3" class="option">score</option>
+                </select>
+            </div>
+        </div>
+        <div class="wrapper-itmes">
+           <div class="number-span">
+            <span class="item-span no">No</span>
+            <span class="item-span">Name</span>
+           </div>
+            <span class="item-span">Age</span>
+            <span class="item-span">Score</span>
+        </div>
+        <ul class="item-list"></ul>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
